@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>QRuery</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="qrcode.js"></script>
+    <script src="jsQR.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="card left">
+        <div class="front face">
+
+          <div id="textBlockWrapper">
+            <textarea id="textBlock" placeholder="【拖动文件】到这里，或【点击这里】编辑文字"></textarea>
+          </div>
+
+          <div class="optionBlock">
+            <a class="moreButton" href="#" onclick="moreButtonClicked()">更多选项</a>
+            <div id="correctionForm">
+              <select id="correctionSelect">
+                <option value="M">容错级别：自动</option>
+                <option value="L">容错级别：低（L）</option>
+                <option value="M">容错级别：中（M）</option>
+                <option value="Q">容错级别：高（Q）</option>
+                <option value="H">容错级别：极高（H）</option>
+              </select>
+            </div>
+
+            <div id="logoForm">
+              <input type="checkbox" value="true" id="logoCheckBox" />
+              <label for="logoCheckBox" >添加标志</label>
+            </div>
+
+            <div id="logoBlock">
+              <span>
+                【拖动图片】到这里添加标志
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="back face">
+          <div id="qrBlock"></div>
+          <div class="optionBlock">
+            <a class="moreButton" href="#" onclick="moreButtonClicked()">更多信息</a>
+            <div id="correctionInfo"></div>
+            <div id="versionInfo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card right">
+        <div id="imageBlockWrapper">
+          <div id="imageBlock">
+              <p>【拖动图片】到这里</p><p>进行识别</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="circleButton alterLeft shifted">
+        <a href="#" onclick="alterLeftButtonClicked();">保存</a>
+      </div>
+      
+      <div class="circleButton left flippable">
+        <a class="front" href="#" onclick="leftButtonClicked()">生成</a>
+        <a class="back" href="#" onclick="flipBack()">编辑</a>
+      </div>
+
+      <div class="circleButton right" id="">
+        <a href="#" onclick="rightButtonClicked();">识别</a>
+      </div>
+
+      <div class="circleButton alterRight">
+        <a href="#" onclick="alterRightButtonClicked();">保存</a>
+      </div>
+    </div>
+
+    <script src="frontend.js"></script>
+  </body>
+</html>

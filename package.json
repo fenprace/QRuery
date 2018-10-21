@@ -1,0 +1,21 @@
+{
+  "name": "qruery",
+  "version": "0.0.1",
+  "description": "QR reader and generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/electron/cli.js .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "QR",
+    "Electron",
+    "QR Code",
+    "Quick Response Barcode"
+  ],
+  "author": "Prace Fen",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
