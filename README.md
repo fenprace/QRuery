@@ -19,3 +19,6 @@ QR Generator with GUI (based on Electron)
 也可利用 Electron 获得打包版本用于分发，参考 [分发应用](https://electronjs.org/docs/tutorial/application-distribution) ，将 QRuery 文件夹改名为 app，放在对应的 Resources 文件夹下即可。
 
 ## 截图
+![](https://raw.githubusercontent.com/fenprace/QRuery/master/screenshots/0.png)
+![](https://raw.githubusercontent.com/fenprace/QRuery/master/screenshots/1.png)
+![](https://raw.githubusercontent.com/fenprace/QRuery/master/screenshots/2.png)
